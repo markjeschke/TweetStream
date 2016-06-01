@@ -42,7 +42,7 @@ class TweetStreamTableViewController: UITableViewController {
     func detectNetworkConnection() {
         if Reachability.isConnectedToNetwork() == true {
             twitterManager.getTimeline()
-            print("successful connection")
+            print("Connection was successful")
         } else {
             failedConnectionAlert()
             print("Connection failed")
@@ -53,7 +53,7 @@ class TweetStreamTableViewController: UITableViewController {
     
     func reloadTweets() {
         self.tableView.reloadData()
-        print("reloadTweets.")
+        print("Tweets table view was reloaded")
     }
     
     // MARK: === Failed Connection Alert ===
@@ -74,14 +74,18 @@ class TweetStreamTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        // Custom TableViewCell.
         let ResultCellIdentifier = "ResultCell"
         let cell = self.tableView.dequeueReusableCellWithIdentifier(ResultCellIdentifier) as! TweetCell
+        
+        // Extract data for each cell.
         let tweet = twitterManager.dataSource[indexPath.row] as! NSDictionary
         let userNameDict = tweet.objectForKey("user") as! NSDictionary
         let twitterName = userNameDict.objectForKey("name") as! String
         let screenName = userNameDict.objectForKey("screen_name") as! String
         let profileImage = userNameDict.objectForKey("profile_image_url") as! String
         
+        // Display the Tweets for each cell property.
         cell.twitterNameLabel!.text = twitterName
         cell.screenNameLabel!.text = "@\(screenName)"
         cell.textMessageLabel!.text = tweet.objectForKey("text") as? String

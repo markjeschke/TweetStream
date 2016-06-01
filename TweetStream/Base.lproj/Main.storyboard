@@ -10,7 +10,7 @@
         <scene sceneID="wJl-2A-MA5">
             <objects>
                 <tableViewController id="OpC-eH-wG8" customClass="TweetStreamTableViewController" customModule="TweetStream" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="R3L-pJ-TLs">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="R3L-pJ-TLs">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="195"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dBn-cu-bWT" id="2t5-y3-W8N">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="194"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="195"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkN-Er-wrC">
@@ -87,7 +87,7 @@
                                         <constraint firstItem="UkN-Er-wrC" firstAttribute="top" secondItem="oEs-NH-LCg" secondAttribute="bottom" constant="11" id="hVG-t2-OOT"/>
                                         <constraint firstItem="t2r-O4-oWu" firstAttribute="top" secondItem="2t5-y3-W8N" secondAttribute="topMargin" constant="6" id="n3M-z0-hrk"/>
                                         <constraint firstItem="t2r-O4-oWu" firstAttribute="leading" secondItem="2t5-y3-W8N" secondAttribute="leadingMargin" constant="8" id="oFz-Tp-sd7"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="UkN-Er-wrC" secondAttribute="bottom" constant="4" id="q3z-e0-MWO"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="UkN-Er-wrC" secondAttribute="bottom" constant="5" id="q3z-e0-MWO"/>
                                         <constraint firstItem="UkN-Er-wrC" firstAttribute="top" secondItem="bsW-NF-qiz" secondAttribute="bottom" constant="34" id="yLS-m4-px9"/>
                                     </constraints>
                                 </tableViewCellContentView>
