@@ -1,14 +1,14 @@
 # TweetStream
 Swift Xcode project that demonstrates the implementation of a Twitter API to display the timeline of a given screen name.
 
-## Please note:
-This project won't display Twitter feeds via the iOS simulator. You must deploy the build to an actual device with a Twitter account enabled.
+### Important
+This project will not display Twitter feeds via the iOS simulator. The build must be deployed to an actual device with a Twitter account enabled.
 
-### Features
+### Features:
 * The UITableView cells have dynamically-sized height, depending on the amount of content in the tweet message.
 * Displays an alternating background color to help make each tweet more legible.
 * Detects data or Wi-Fi connection when the app is launched or when it returns from the background, while multitasking.
-* Optimized for universal format for all devices, orientation, split screen and slide-over multitasking (iPad Air 2 and iPad Pro only).
+* Optimized for all devices, orientation, split screen and slide-over multitasking (iPad Air 2 and iPad Pro only).
 
 Please contact Mark Jeschke at: 
 
