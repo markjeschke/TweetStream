@@ -27,8 +27,8 @@ class TweetStreamTableViewController: UITableViewController {
         detectNetworkConnection()
         
         // Register the NSNotification listeners that are triggered from other classes.
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "reloadTweets", name: "reloadTweets", object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "detectNetworkConnection", name: "detectNetworkConnection", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.reloadTweets), name: "reloadTweets", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.detectNetworkConnection), name: "detectNetworkConnection", object: nil)
         
         self.title = "@\(twitterManager.screenName)"
         
