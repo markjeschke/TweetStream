@@ -15,10 +15,6 @@ class TweetStreamTableViewController: UITableViewController {
     let tweetCell = TweetCell()
     let twitterManager = TwitterManager()
     
-    // MARK: === Set Empty imageCache dictionary ===
-    
-    var imageCache = [String:UIImage]()
-    
     // MARK: === View Lifecyle ===
 
     override func viewDidLoad() {
